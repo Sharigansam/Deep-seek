@@ -17,6 +17,7 @@ public class DeepSeekController {
     @Autowired
     private DeepSeekService deepSeekService;
 
+    // This is comtroller
     @PostMapping("/predict")
     public ResponseEntity<?> predict(@RequestBody PredictionRequest request) {
         return ResponseEntity.ok(deepSeekService.predict(request));

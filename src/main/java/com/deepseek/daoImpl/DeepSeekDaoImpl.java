@@ -15,11 +15,11 @@ public class DeepSeekDaoImpl implements DeepSeekDao {
 
 		// Call the Gemini API
 		GeminiAPIClient geminiAPIClient = new GeminiAPIClient();
-		String apiResponse9 = geminiAPIClient.callGeminiAPI(inputData);
+		String apiResponse1 = geminiAPIClient.callGeminiAPI(inputData);
 
 		// Create and return the response
 		PredictionResponse response = new PredictionResponse();
-		response.setResult(apiResponse9); // Set the entire JSON response as the result
+		response.setResult(apiResponse1); // Set the entire JSON response as the result
 		return response;
 	}
 }
